@@ -115,7 +115,7 @@ func parseCookieValue(raw string, allowDoubleQuote bool) (string, bool) {
 	return raw, true
 }
 
-func readCookieJson(filepath string) *cookiejar.Jar {
+func ReadCookieJson(filepath string) *cookiejar.Jar {
 	jar, err := cookiejar.New(nil)
 
 	if err != nil {
